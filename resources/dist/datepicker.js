@@ -31,7 +31,8 @@ document.addEventListener('alpine:init', () => {
                     shorthand: false, //defaults to false
                     dateFormat: "Y-m-01", //defaults to "F Y"
                     altInput: true,
-                    altFormat: "F, Y", //defaults to "F Y"
+                    allowinput: true,
+                    altFormat: "m/Y", //defaults to "F Y"
                     theme: this.mode // defaults to "light"
                 }))
             } else if(attribs.weekSelect) {
