@@ -13,7 +13,7 @@ document.addEventListener('alpine:init', () => {
             const config = {
                 mode: attribs.mode,
                 time_24hr: true,
-                altFormat: 'F j, Y',
+                altFormat: 'Y-m-d',
                 disableMobile: true,
                 initialDate: this.state,
                 allowInvalidPreload: true,
@@ -29,7 +29,7 @@ document.addEventListener('alpine:init', () => {
             if (attribs.monthSelect) {
                 config.plugins.push(new monthSelectPlugin({
                     shorthand: false, //defaults to false
-                    dateFormat: "Y-m-01", //defaults to "F Y"
+                    dateFormat: "Y-m", //defaults to "F Y"
                     altInput: true,
                     allowinput: true,
                     altFormat: "m/Y", //defaults to "F Y"
